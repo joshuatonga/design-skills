@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+.env
+.env.*
+!.env.example
+work/
+research/
+artifacts/
+coverage/
+*.mov
+*.mp4
+*.log
+.agents/
+.codex/
+.claude/
+.cursor/
+skills-lock.json

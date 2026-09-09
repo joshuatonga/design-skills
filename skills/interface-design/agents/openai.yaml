@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interface Design"
+  short_description: "Build and verify thoughtful web and mobile interfaces"
+  default_prompt: "Use $interface-design to help with this interface task."

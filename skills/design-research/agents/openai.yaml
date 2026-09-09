@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Research"
+  short_description: "Turn real interface references into design decisions"
+  default_prompt: "Use $design-research to help with this interface task."
