@@ -15,6 +15,8 @@ Source material includes `appllama-usage` (1.1.0), `appllama-app-design-skill` (
 - Distinguished inspected visual evidence, inferred behavior, and measured performance; added explicit handling for sampled flows and unavailable tools.
 - Added repository documentation, validation, installer checks, and contribution workflows.
 
+Version 0.2.0 adds iOS guidance grounded in linked Apple and framework documentation, restores detailed mobile decision and verification guidance without universal package/style mandates, and incorporates Joshua Tonga's product copy/design standards. Upstream skill and supporting-reference coverage was compared again on 2026-10-14; the source revision above remains the provenance of the initial adaptation, not a claim that every current upstream instruction is reproduced.
+
 The original copyright and permission notice is retained in [LICENSE](LICENSE) and inside each installable skill so attribution travels with individual installations. Original additions are copyright (c) 2026 Joshua Tonga.
 
 Appllama and Mobbin names identify source material and integrations. Their logos and product media are not included. Third-party reference media retains its respective ownership and is outside this repository's MIT license.

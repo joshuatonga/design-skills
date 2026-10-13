@@ -1,8 +1,14 @@
-# Initial validation record
+# Validation history
+
+## Version 0.2.0 — 2026-10-14
+
+Packaging, independent installations, and skill validation passed. An independently generated SwiftUI sample built and passed two simulator UI tests after review corrections. See the [dated evaluation record](validation-0.2.0.md) for observed behavior, visual inspection, defects, and unverified coverage.
+
+## Version 0.1.0 — initial validation
 
 Reviewed on 2026-09-09 for version 0.1.0.
 
-## Automated checks
+### Automated checks
 
 - Repository validation passed for exactly two skill entrypoints, required frontmatter, portable notices, and local file links.
 - Four validator tests passed, including invalid YAML, missing descriptions, broken references, sibling-file dependencies, and accidental nested skills.
@@ -10,7 +16,7 @@ Reviewed on 2026-09-09 for version 0.1.0.
 
 These checks validate packaging and structural invariants. They do not demonstrate an agent's behavior on every possible prompt.
 
-## Live Mobbin lookup
+### Live Mobbin lookup
 
 Used the connected Mobbin website-section search with one result for a pricing section containing three plans and a comparison table. The returned image was inspected inline.
 
@@ -18,7 +24,7 @@ Observed: [Sprig's pricing section](https://mobbin.com/sites/sections/1e145713-d
 
 Interpretation: putting comparable values on shared rows helps a reader inspect differences; this is a proposed design rationale, not measured evidence of conversion lift. The lookup verified capability selection, image availability, visual inspection, and canonical citation for section search. It did not test screen/flow search or a manually configured connection. No reference images or signed media URLs are stored here.
 
-## Instruction review
+### Instruction review
 
 The cases in [scenarios.md](scenarios.md) were reviewed against the written instructions:
 

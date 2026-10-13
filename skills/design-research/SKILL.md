@@ -4,7 +4,7 @@ description: Research real interface patterns using connected Mobbin tools or su
 license: MIT
 metadata:
   author: joshuatonga
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 # Design Research
 
@@ -27,6 +27,8 @@ Use supplied references first when the user selected them. If Mobbin is absent o
 ## Choose the depth
 
 Start with a small relevant batch, usually 3–5 examples. Refine or expand only when it could change a design decision; stop when the question is answered. Follow an explicit user request for deeper research.
+
+For a whole new app or major journey, cover the consequential screen types and complete relevant flows where evidence is accessible. A few attractive home screens do not establish onboarding, editing, cancellation, or recovery behavior. Track unresolved decisions and coverage gaps; expand until those decisions are supported or explicitly marked uncertain. A small fix can reuse adequate existing research.
 
 Read only the matching playbook:
 

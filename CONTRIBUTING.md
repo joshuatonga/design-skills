@@ -26,6 +26,8 @@ For tool changes, verify the live schema and update the review date in the adapt
 
 Use [the scenario checklist](tests/scenarios.md) to review behavior. Document which scenarios were actually exercised; static validation does not prove model behavior or UI performance.
 
+For substantial native-guidance changes, follow the [iOS evaluation procedure](tests/ios-evaluation.md) in an isolated workspace when runtime tools are available. Record actual outcomes and missing coverage in a dated validation result. Do not substitute a code-only review for a claimed simulator pass.
+
 ## Public materials
 
 Use invented product details in examples. Do not commit credentials, signed media URLs, private briefs, reference-screen downloads, or third-party product assets. Describe failures with redacted examples and canonical source links where appropriate.

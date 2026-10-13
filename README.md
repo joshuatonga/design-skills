@@ -7,7 +7,7 @@ Two agent skills for turning design references into thoughtful web and mobile in
 | Skill | What it does | Use it for |
 | --- | --- | --- |
 | [design-research](skills/design-research/SKILL.md) | Finds and inspects real examples through Mobbin, then turns observations into design decisions. | Reference gathering, screen critiques, onboarding and checkout research, component studies. |
-| [interface-design](skills/interface-design/SKILL.md) | Applies research through separate web and mobile workflows, then checks the running interface. | Websites, web apps, Expo / React Native screens, and polishing existing interfaces. |
+| [interface-design](skills/interface-design/SKILL.md) | Applies research through web, mobile, and iOS guidance, then checks the running interface. | Websites, web apps, SwiftUI/UIKit and Expo / React Native screens, and polishing existing interfaces. |
 
 ## Install
 
@@ -73,17 +73,21 @@ Skill invocation syntax varies by agent. You can also ask naturally; each skill 
 
 Research scales with the task. There is no mandatory screenshot quota, new UI framework, or fixed visual style.
 
+For iOS, the skill defaults to native bars, controls, and presentations, with Apple HIG links and framework-specific mappings. Supporting references cover navigation and state, motion, measured performance, asset preparation, and product copy. Every interface change includes a final copy/design review. Substantial mobile flows include device, accessibility, failure, and lifecycle checks, with unavailable coverage reported explicitly.
+
 ## Platform support
 
 | Target | References | Implementation guidance |
 | --- | --- | --- |
 | Websites and web apps | Mobbin web screens, flows, and website sections | Responsive layout, semantic HTML, keyboard/focus behavior, forms, browser history, and browser verification. |
-| iOS apps | Mobbin iOS screens and flows | Expo / React Native, native controls, navigation, safe areas, motion, and simulator/device verification. |
+| iOS apps | Mobbin iOS screens and flows; Apple HIG for platform behavior | SwiftUI/UIKit and Expo / React Native mappings; native bars/controls, typography, symbols, materials, navigation, accessibility, and simulator/device verification. |
 | Android apps | iOS examples for transferable patterns, plus supplied Android references | Expo / React Native with Android-specific behavior checked on Android. Mobbin's current tools do not expose Android-specific search. |
 
 Existing project choices take precedence. Mobile examples do not require migrating another stack to Expo. Browser targets, including Expo web, need web verification; an iOS simulator result does not validate a browser or Android build.
 
 Running UI checks requires the appropriate browser, simulator, emulator, or device tools in your environment. Missing access is reported, not treated as a passing check. The skills can be installed separately and do not require one another.
+
+Repository tests validate packaging; application quality needs behavioral evaluation. See the [iOS evaluation procedure](tests/ios-evaluation.md) and [validation record](tests/validation.md) for the checks actually performed and their limits.
 
 ## Contribute
 

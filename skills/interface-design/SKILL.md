@@ -4,7 +4,7 @@ description: Design, implement, and polish web and mobile interfaces using real 
 license: MIT
 metadata:
   author: joshuatonga
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 # Interface Design
 
@@ -19,8 +19,12 @@ Preserve the project's stack and components. For a new mobile project with no st
 Read only the applicable guidance:
 
 - [Web](references/web.md): websites, browser apps, and browser targets of shared projects.
-- [Mobile](references/mobile.md): native mobile screens, with Expo / React Native implementation guidance.
-- [Motion and assets](references/motion-and-assets.md): when interactions or visual assets need work.
+- [Mobile](references/mobile.md): native mobile screens, navigation, forms, and state.
+- [iOS](references/ios.md): required for iOS targets; Apple HIG, native bars/controls, and SwiftUI/UIKit/Expo mappings.
+- [Motion](references/motion.md): when changing transitions, gestures, or feedback.
+- [Performance](references/performance.md): performance-sensitive work or a measured responsiveness problem.
+- [Assets](references/assets.md): choosing, generating, or preparing visual assets.
+- [Copy and design review](references/copy-and-design.md): apply when writing UI and before completing any interface change.
 - [Verification](references/verification.md): before reporting implementation complete.
 
 For both web and native targets, read and validate both branches. For other native stacks, keep their framework and use the transferable mobile principles, checking platform documentation rather than forcing React Native APIs.
@@ -37,6 +41,8 @@ If research tools or images are unavailable, use existing project evidence and s
 
 State the important choices briefly: primary action, reading order, layout, component roles, navigation, and relevant states. Use research to explain decisions, not to copy a competitor's brand or impose a different product scope.
 
+For a new product, establish a small explicit system before building across screens: type roles, semantic colors, spacing and shape scales, component states, and an asset direction if needed. Record the primary journeys and presentation/back decisions. For a small fix, reuse these decisions rather than producing a new design document.
+
 - Reuse the product's typography, palette, spacing, and shape tokens. Add tokens deliberately where needed. No universal accent-color count or blanket ban on a type pairing replaces the brand brief.
 - Make hierarchy visible through grouping, type, spacing, and emphasis. Prefer a clear dominant task to several competing actions.
 - Design relevant loading, empty, error, disabled, and success states. Keep partial updates local and preserve user input through failures.
@@ -50,5 +56,7 @@ Build within the user's authorized scope. Do not add unrelated features, analyti
 ## Verify and report
 
 Run the affected surface and inspect it using [the verification workflow](references/verification.md). Exercise the important interaction and adjacent navigation/state paths, fix observed defects, and recheck the changed behavior. Scale verification to the change rather than promising endless perfection.
+
+Apply the [copy and design review](references/copy-and-design.md) and correct findings directly. For a new app or substantial flow, assess the complete affected journey, including exits and recovery, rather than judging isolated screens.
 
 Report the resulting behavior, important design choices and reference links, the checks actually performed, and any remaining limitations. If no runtime was available, distinguish implementation from pending visual/interaction verification. Recordings can reveal visible defects; they do not prove frame rate or release-device performance.

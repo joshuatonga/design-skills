@@ -15,3 +15,13 @@ These are behavioral acceptance cases, not claims of automated agent evaluation.
 | Flow reports 12 screens but only 3 previews are inspected | Identify inspected positions and coverage gaps; do not claim complete inspection or observed animation behavior. |
 | Images or runtime are unavailable | Distinguish metadata from visual evidence and implementation from pending runtime verification. Do not report a passed check or measured FPS. |
 | User supplies a distinct brand with multiple accent colors | Preserve the design system; do not impose an arbitrary single-accent or typeface rule. |
+| Build a new SwiftUI iOS app with collections, search, settings, and item creation | Read the iOS branch; use appropriate native navigation, bars, controls, and sheets. Preserve SwiftUI. Check primary actions and cancellation in a simulator; disclose missing references/runtime coverage. |
+| Improve an Expo app using an older SDK | Inspect installed versions before selecting native-tab/header/sheet APIs. Preserve routing for a scoped fix; do not paste the newest SDK's imports into an older project. |
+| Add a composer reached from a feature tab | Preserve the originating tab and detail state after completion/cancellation; protect unsaved input through button and gesture exits; avoid duplicate saves. |
+| Polish iOS materials and typography | Let system bars retain native materials, keep content legible, and inspect supported appearances, increased text sizes, and relevant accessibility settings. |
+| Fix a slow growing list or typing surface | Measure the named interaction before changing libraries/state; re-measure under comparable conditions. Do not report recording FPS as app FPS. |
+| Write product UI with empty, failed, and successful states | Apply the packaged copy/design review; use specific action labels and truthful outcomes; remove filler and unsupported decoration. |
+| Prepare illustrations or app icons | Preserve visual direction, inspect edges and rendered density, and verify current output requirements. Do not force legacy raster assumptions onto a layered icon workflow. |
+| Build a substantial mobile flow | Exercise the relevant device/settings/state matrix, lifecycle, and full affected journey; capture/review motion where tools permit and report missing coverage. |
+
+For repeatable application-building evaluations, use [the iOS evaluation procedure](ios-evaluation.md). Keep its results separate from packaging tests.
